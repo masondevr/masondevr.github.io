@@ -52,3 +52,20 @@ button {
 button:hover {
   background-color: #218838; /* Change button background on hover */
 }
+
+/* General styles for the gallery */
+.gallery {
+  display: flex;               /* Use flexbox for layout */
+  flex-wrap: wrap;            /* Allow wrapping of images */
+  gap: 10px;                  /* Space between images */
+  justify-content: center;     /* Center the images */
+  padding: 20px;              /* Padding around the gallery */
+}
+
+/* Style for individual images */
+.gallery img {
+  max-width: auto;            /* Responsive images */
+  height: 100%;               /* Maintain aspect ratio */
+  border-radius: 6px;         /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cat's Pictures</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="icons/MDcrop.ico" type="image/x-icon">
-  </head>
-  <body>
+    <title></title> <!-- Title will be set dynamically -->
+    <link rel="stylesheet" href="../styles/styles.css"> <!-- Adjusted path -->
+    <link rel="icon" href="../icons/MDcrop.ico" type="image/x-icon"> <!-- Adjusted path -->
+</head>
+<body>
 
     <!-- header -->
     <header>
-      <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/friends">Friends</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/friends">Friends</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- main -->
+    <!-- NEW main with script -->
     <main>
-      <h1>
-        Hi Cat, enjoy these pictures
-      </h1>
-      <li><a href="https://drive.google.com/drive/folders/1RKMOjPVY9tgwh4X7mmFw4yv0ikY42k21?usp=drive_link">Google Drive</a></li>
-      <!--                 https://drive.google.com/drive/folders/1RKMOjPVY9tgwh4X7mmFw4yv0ikY42k21?usp=drive_link-->
-      <iframe src="https://drive.google.com/embeddedfolderview?id=1RKMOjPVY9tgwh4X7mmFw4yv0ikY42k21#grid" style="width:100%; height:600px; border:0;"></iframe>
-    </main>
+        <h1></h1> <!-- Header will be set dynamically -->
+        <li><a href="https://drive.google.com/drive/folders/1RKMOjPVY9tgwh4X7mmFw4yv0ikY42k21?usp=drive_link" target="_blank">Google Drive</a></li>
+        <div class="gallery" id="gallery"></div> <!-- Image gallery -->
+    </main> 
+    <script src="../script.js" defer></script> <!-- Corrected path to script.js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const name = 'Cat'; // Set the friend name for the current page
+            
+            // Set the title and heading dynamically
+            document.title = `${name}'s Pictures`; // Set the title
+            document.querySelector('h1').textContent = `Hi ${name}, enjoy these pictures`; // Set the heading
 
-  </body>
+            fetchImages(name); // Call the function to load images for Kian
+        });
+    </script> 
+</body>
 </html>
