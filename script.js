@@ -8,7 +8,9 @@ const folderIds = {
     Jack: '1mjSKBTwLSXmsbS1FVFGh0fFxYB0toUOB',
     Jonah: '1f9fFkvNrh653VttQfGXJzGby0Bs2Xc_i',
     Kenna: '1kUtrCaAblL0aLilzYb62JuBRtggoV8dQ',
-    Kian: '1DG5p1bCO-fcaZA_tTT9cz7doVomBiza4'
+    Kian: '1DG5p1bCO-fcaZA_tTT9cz7doVomBiza4',
+    Mason: '1qDTd7JGfLgTUPlXcJiFmP7xrnv8kuyO6',
+    Tuxin: '1F3xSfY9p6lz7Uh1Yk-xfHMImOZT3dDAj'
 };
 
 const imgWidth = 500;
