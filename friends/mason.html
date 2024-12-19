@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title> <!-- Title will be set dynamically -->
+    <link rel="stylesheet" href="../styles/styles.css"> <!-- Adjusted path -->
+    <link rel="icon" href="../icons/MDcrop.ico" type="image/x-icon"> <!-- Adjusted path -->
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/friends">Friends</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- NEW main with script -->
+    <main>
+        <h1></h1> <!-- Header will be set dynamically -->
+        <li><a href="https://drive.google.com/drive/folders/1qDTd7JGfLgTUPlXcJiFmP7xrnv8kuyO6?usp=drive_link" target="_blank">Google Drive</a></li>
+        <div class="gallery" id="gallery"></div> <!-- Image gallery -->
+    </main> 
+    <script src="../script.js" defer></script> <!-- Corrected path to script.js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const name = 'Mason'; // Set the friend name for the current page
+            
+            // Set the title and heading dynamically
+            document.title = `${name}'s Pictures`; // Set the title
+            document.querySelector('h1').textContent = `Alright, here are some pictures of me i guess`; // Set the heading
+
+            fetchImages(name); // Call the function to load images for Kian
+        });
+    </script> 
+</body>
+</html>
